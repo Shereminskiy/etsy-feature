@@ -1,0 +1,29 @@
+{
+    "name": "alexander",
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "etsy",
+                "version": "1.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:etsy/feature.git",
+                    "reference": "master"
+                }
+            }
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Minify": "vendor/mrclay/min/lib"
+        },
+        "classmap": [
+            "vendor"
+        ]
+    },
+    "require": {
+        "etsy": "1.*",
+        "phpunit/phpunit": "3.7.*"
+    }
+}
